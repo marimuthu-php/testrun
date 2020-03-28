@@ -1,0 +1,205 @@
+#covid-info h1, #covid-info p {
+    margin: 0;
+}
+
+#covid-info .main-tabs figure {
+    margin: 0 auto;
+    width: 90px;
+    height: auto;
+}
+#covid-info .main-tabs figure img, .helpline-head figure img, 
+.testing-head figure img, .mini-tab figure img, .symptom-head figure img {
+    max-width: 100%;
+}
+
+#covid-info .main-wrapper {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#covid-info .main-tabs {
+    display: inline-grid;
+    grid-column: 50% 50%;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+#covid-info .main-tabs div {
+    padding: 15px 40px;
+    margin: 10px;
+    border-radius: 10px;
+    /* width: 130px; */
+}
+
+#covid-info .main-tabs div h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.main-tabs #corona-dashboard {
+    background: #E30A1D;
+}
+.main-tabs #symptom-checker {
+    background: #46BABA;
+}
+.main-tabs #testing-centers {
+    background: #701C5A;
+}
+.main-tabs #helpline-numbers {
+    background: #CFA503;
+}
+
+.helpline-head, .testing-head, .symptom-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.helpline-head figure, .testing-head figure, .symptom-head figure {
+    margin: 0;
+    width: 100px;
+    height: auto;
+}
+
+.intro-line {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(125, 125, 125); 
+    /* margin-bottom: 8px; */
+    width: 50%;
+    margin: 10px auto !important;
+}
+
+.intro-line a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: initial;
+}
+.helpline-list, .center-list {
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+}
+.center-list {
+    width: 100%;
+}
+
+.helpline-list li button, .center-list li, .sv_q_radiogroup.sv-q-col-1 {
+    /* float: left; */
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border-radius: .25rem;
+    background: #fdfdfe;
+    border: 1px solid rgba(0,0,0,.125);
+    cursor: pointer;
+}
+
+.helpline-list li button:hover {
+    background: rgba(0,0,0,.125);
+}
+.helpline-list li p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: rgb(125, 125, 125);
+    font-size: 14px;
+    line-height: 20px;
+}
+.helpline-list li h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+}
+.arrow-img {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    transform: rotate(90deg);
+}
+.center-list li a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.panel-group a span {
+    float: right;
+}
+.mini-tab figure {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+/* #tab-content {
+    position: relative;
+} */
+.mini-tab {
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+#testing-data {
+    width: 50%;
+    margin: 15px auto;
+}
+.panel-group {
+    margin: 15px;
+}
+.sv_q.sv_qstn {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    transition: .3s;
+    background-color: #fff;
+    padding: 16px 16px 20px;
+    border-radius: .25em;
+    width: 50% !important;
+    margin: 15px auto !important;
+}
+.sv_q_num, .sv_progress {
+    display: none;
+}
+
+.sv_q_title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000; 
+}
+.sv_q_radiogroup_control_item {
+    width   : 28px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+.sv_q_radiogroup_label {
+    margin-left: -28px;
+}
+#goback {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+#symptom-data, #helpline-data, #testing-data {
+    display: block;
+    margin: 50px auto 0;
+}

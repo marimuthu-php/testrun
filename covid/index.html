@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://surveyjs.azureedge.net/1.5.17/modern.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="covid-info">
+        <div class="main-wrapper">
+            <div class="main-tabs" >
+                <div id="corona-dashboard">
+                    <figure>
+                        <img src="img/iconCorona.png" alt="Corono Dashboard" />
+                    </figure>
+                    <h1>Coronavirus<br /> dashboard</h1>
+                </div>
+                <div id="symptom-checker">
+                    <figure>
+                        <img src="img/Iconsymptom.png" alt="symptom checker" />
+                    </figure>
+                    <h1>Symptom<br /> checker</h1>
+                </div>
+                <div id="testing-centers">
+                    <figure>
+                        <img src="img/Icontestingcentre.png" alt="testing centers" />
+                    </figure>
+                    <h1>Testing<br /> centers</h1>
+                </div>
+                <div id="helpline-numbers">
+                    <figure>
+                        <img src="img/iconhelpline.png" alt="helpline numbers" />
+                    </figure>
+                    <h1>Helpline<br /> numbers</h1>
+                </div>
+            </div>
+        </div>
+        <div id="tab-content">
+            <div id="symptom-data" class="text-center" style="display: none;">
+                <div class="symptom-head">
+                    <figure>
+                        <img src="img/Iconsymptoms_color.png" alt="Symptom checker" />
+                    </figure>
+                    <h1>Coronavirus<br /> Symptom checker</h1>
+                </div>
+                <div id="surveyElement" ></div>
+                <div id="surveyResult"></div>
+              </div>
+            <div id="helpline-data" style="display: none;">
+                <div class="helpline-head">
+                    <figure>
+                        <img src="img/iconhelpline_color.png" alt="Helpline number" />
+                    </figure>
+                    <h1>Coronavirus<br /> Helpline numbers</h1>
+                </div>
+                <div id="helplineNos">
+                    <p class="intro-line">Indian government and<a href="https://www.mohfw.gov.in/" target="_blank"> Ministry of Health &amp;
+                    Family Welfare </a>has provided the following helpline numbers of states.</p>            
+                    <ul class="helpline-list">
+                        <li><button><p>National Helpline Number</p><h1>1075</h1></button> </li>
+                        <li><button><p>Central Helpline Number</p><h1>+91-11-23978043</h1></button> </li>
+                        <li><button><p>MyGov WhatsApp Number</p><h1>+91-90131-51515</h1></button> </li>
+                        <li><button><p>Central Helpline Email</p><h1>ncov2019@gmail.com</h1></button> </li>
+                    </ul>
+                    <p class="intro-line">States helpline number</p>
+                    <ul class="helpline-list">
+                        <li><button><p>Andhra Pradesh</p><h1>0866-2410978</h1>         </button> </li>
+                        <li><button><p>Arunachal Pradesh</p><h1>9436055743</h1></button> </li>
+                        <li><button><p>Assam</p><h1>6913347770</h1></button> </li>
+                        <li><button><p>Bihar</p><h1>104</h1></button> </li>
+                        <li><button><p>Chhattisgarh</p><h1>077122-35091</h1></button> </li>
+                        <li><button><p>Goa</p><h1>104</h1></button> </li>
+                        <li><button><p>Gujarat</p><h1>104</h1></button> </li>
+                        <li><button><p>Haryana</p><h1>8558893911</h1></button> </li>
+                        <li><button><p>Himachal Pradesh</p><h1>104</h1></button> </li>
+                        <li><button><p>Jharkhand</p><h1>104</h1></button> </li>
+                        <li><button><p>Karnataka</p><h1>104</h1></button> </li>
+                        <li><button><p>Kerala</p><h1>0471-2552056</h1></button> </li>
+                        <li><button><p>Madhya Pradesh</p><h1>0755-2527177</h1></button> </li>
+                        <li><button><p>Maharashtra</p><h1>020-26127394</h1></button> </li>
+                        <li><button><p>Manipur</p><h1>3852411668</h1></button> </li>
+                        <li><button><p>Meghalaya </p><h1>108</h1></button> </li>
+                        <li><button><p>Mizoram</p><h1>102</h1></button> </li>
+                        <li><button><p>Nagaland</p><h1>7005539653</h1></button> </li>
+                        <li><button><p>Odisha</p><h1>9439994859</h1></button> </li>
+                        <li><button><p>Punjab</p><h1>104</h1></button> </li>
+                        <li><button><p>Rajasthan </p><h1>0141-2225624</h1></button> </li>
+                        <li><button><p>Sikkim</p><h1>104</h1></button> </li>
+                        <li><button><p>Tamil Nadu</p><h1>044-29510500</h1></button> </li>
+                        <li><button><p>Telangana </p><h1>104</h1></button> </li>
+                        <li><button><p>Tripura</p><h1>0381-2315879</h1></button> </li>
+                        <li><button><p>Uttarakhand</p><h1>104</h1></button> </li>
+                        <li><button><p>Uttar Pradesh</p><h1>18001805145</h1></button> </li>
+                        <li><button><p>West Bengal</p><h1>1800313444222</h1></button> </li>
+                        <li><button><p>Andaman and Nicobar Islands</p><h1>03192-232102</h1></button> </li>
+                        <li><button><p>Chandigarh</p><h1>9779558282</h1></button> </li>
+                        <li><button><p>Dadra and Nagar Haveli and Dam</p><h1>104</h1></button> </li>
+                        <li><button><p>Delhi</p><h1>011-22307145</h1></button> </li>
+                        <li><button><p>Jammu &amp; Kashmir </p><h1>1912520982</h1></button> </li>
+                        <li><button><p>Ladakh</p><h1>1982256462</h1></button> </li>
+                        <li><button><p>Lakshadweep</p><h1>4896263742</h1></button> </li>
+                        <li><button><p>Puducherry</p><h1>104</h1></button> </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="testing-data" style="display: none;">
+                <div class="testing-head" >
+                    <figure>
+                        <img src="img/icontestingcentres_color.png" alt="Testing centers" />
+                    </figure>
+                    <h1>Coronavirus<br /> Testing centers</h1>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Andhra Pradesh <span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Andhra Medical College, Visakhapatnam, Andhra Pradesh</li>
+                                    <li>GMC, Anantapur, AP</li>
+                                    <li>Guntur Medical College, Guntur</li>
+                                    <li>Rajeev Gandhi Institute of Medical Sciences, Kadapa</li>
+                                    <li>Rangaraya Medical College, Kakinada</li>
+                                    <li>Siddhartha Medical College, Vijayawada</li>
+                                    <li>Sri Venkateswara Institute of Medical Sciences, Tirupati</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Bihar<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Darbhanga Medical College, Darbhanga</li>
+                                    <li>Patna Medical College, Patna</li>
+                                    <li>Rajendra Memorial Research Institute of Medical Sciences, Patna</li>
+                                    <li>S K Medical College, Muzaffarpur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Chhattisgarh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>All India Institute Medical Sciences, Raipur</li>
+                                    <li>Late Sri BaliramKashyap Memorial Govt  Medical College, Jagdalpur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Gujarat<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>BJ Medical College, Ahmedabad</li>
+                                    <li>GMC, Bhavnagar</li>
+                                    <li>Government Medical College &amp; SSG Hospital, Vadodara</li>
+                                    <li>Government Medical College, Surat</li>
+                                    <li>M P Shah Government Medical College, Jamnagar</li>
+                                    <li>PDU GMC, Rajkot</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Haryana<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>BPS Govt Medical College, Sonipat</li>
+                                    <li>Pt. B.D. Sharma Post Graduate Inst. of Med. Sciences, Rohtak, Haryana</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Himachal Pradesh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Dr. Rajendra Prasad Govt Med College, Kangra, Tanda, HP</li>
+                                    <li>Indira Gandhi Medical College, Shimla, Himachal Pradesh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Jharkhand<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>MGM Medical College, Jamshedpur</li>
+                                    <li>Rajendra Institute of Medical Sciences, Ranchi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Madhya Pradesh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>All India Institute Medical Sciences, Bhopal</li>
+                                    <li>Bundelkhand Medical College, Sagar</li>
+                                    <li>Gajra Raja Medical College, Gwalior</li>
+                                    <li>MGM Medical College, Indore</li>
+                                    <li>National Institute of Research in Tribal Health (NIRTH), Jabalpur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Maharashtra<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Government Medical College and Hospital &amp; Superspeciality Hospital, Akola</li>
+                                    <li>Government Medical College, Aurangabad</li>
+                                    <li>Government Medical College, Miraj, Sangli</li>
+                                    <li>Government Medical college, Nagpur</li>
+                                    <li>Indira Gandhi Government Medical College, Nagpur</li>
+                                    <li>Kasturba Hospital for Infectious Diseases, Mumbai</li>
+                                    <li>Seth GS Medical College &amp; KEM Hospital , Mumbai</li>
+                                    <li>Shri Bhausaheb Hire Government Medical College, Dhule</li>
+                                    <li>V M  Government Medical College, Solapur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Nagaland<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Odisha<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Regional Medical Research Center, Bhubaneswar</li>
+                                    <li>SCB Medical College, Cuttack</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Punjab<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Government Medical College, Amritsar</li>
+                                    <li>Government Medical College, Patiala, Punjab</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Rajasthan<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>AIIMS, Jodhpur</li>
+                                    <li>Dr. S.N Medical College, Jodhpur</li>
+                                    <li>Jhalawar Medical College, Jhalawar, Rajasthan</li>
+                                    <li>RNT Medical College, Udaipur</li>
+                                    <li>SP Med. College, Bikaner, Rajasthan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Tamil Nadu<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Coimbatore Medical College, Coimbatore</li>
+                                    <li>Government Medical College, Theni</li>
+                                    <li>Government Medical College, Thiruvarur</li>
+                                    <li>Government Medical College, Villupuram</li>
+                                    <li>Government Mohan Kumaramangalam Medical College, Salem</li>
+                                    <li>King's Institute of Preventive Medicine &amp; Research, Chennai</li>
+                                    <li>Madras Medical College, Chennai, Tamil Nadu</li>
+                                    <li>Madurai Medical College, Madurai</li>
+                                    <li>Tirunelveli Medical College, Tirunelveli</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">Tripura<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse15" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Government Medical College, Agartala</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">Uttar Pradesh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse16" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Institute of Medical Sciences, Banaras Hindu University, Varanasi</li>
+                                    <li>Jawaharlal Nehru Medical College, Aligarh</li>
+                                    <li>King's George Medical University, Lucknow</li>
+                                    <li>UPUMS, (Formerly UPRIMS), Saifai</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">Uttarakhand<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse17" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>AIIMS, Rishikesh</li>
+                                    <li>Doon Government Medical College, Dehradun</li>
+                                    <li>Government Medical College, Haldwani</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">West Bengal<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse18" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>IPGMER, Kolkata</li>
+                                    <li>Malda Medical College, Malda</li>
+                                    <li>Midnapore Medical College &amp; Hospital, Midnapore</li>
+                                    <li>Murshidabad Medical College &amp; Hospital, Murshidabad, Berhampur, West Bengal</li>
+                                    <li>National Institute of Cholera and Enteric Diseases, Kolkata</li>
+                                    <li>North Bengal Medical College, Darjeeling</li>
+                                    <li>RG Kar Medical College, Kolkata</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">Andaman and Nicobar Islands<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse19" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Regional Medical Research Centre, Port Blair, Andaman and Nicobar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">Chandigarh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse20" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Government Medical College & Hospital, Chandigarh</li>
+                                    <li>Post Graduate Institute of Medical Education & Research, Chandigarh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">Daman and Diu<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse21" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">Karnataka<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse22" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Bangalore Medical College &amp; Research Institute, Bangalore</li>
+                                    <li>Gulbarga Institute Of Medical Sciences, Gulbarga</li>
+                                    <li>Hassan Inst. of Med. Sciences, Hassan, Karnataka</li>
+                                    <li>Mysore Medical College &amp; Research Institute, Mysore</li>
+                                    <li>Shimoga Inst. of Med. Sciences, Shivamogga, Karnataka</li>
+                                    <li>Vijayanagar Institute of Medical Science, Bellary</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">Kerala<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse23" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Government Medical College, Thrissur</li>
+                                    <li>Govt. Medical College, Kozhikhode, Kerala</li>
+                                    <li>Govt. Medical College, Thriuvananthapuram, Kerala</li>
+                                    <li>National Institute of Virology Field Unit, Kerala</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse24">Telangana<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse24" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Gandhi Medical College, Secunderabad</li>
+                                    <li>Kakatiya Medical College, Nizampura, Warangal</li>
+                                    <li>Osmania Medical College, Hyderabad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse25">Dadra and Nagar Haveli<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse25" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse26">Lakshadweep<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse26" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse27">Jammu and Kashmir<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse27" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Government Medical College, Jammu</li>
+                                    <li>Government Medical College, Srinagar</li>
+                                    <li>Sher_e_ Kashmir Institute of Medical Sciences, Srinagar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse28">Delhi<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse28" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>All India Institute Medical Sciences, Delhi</li>
+                                    <li>Lady Hardinge Medical College, New Delhi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse29">Puducherry<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse29" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Indira Gandhi Medical College & Research Institute, Puducherry</li>
+                                    <li>Jawaharlal Institute of Postgraduate Medical Education & Research, Puducherry</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse30">Ladakh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse30" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Sonam Namgyal Memorial Hospital, Leh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse31">Arunachal Pradesh<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse31" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse32">Assam<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse32" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>Fakhruddin Medical College, Barpeta</li>
+                                    <li>Gauhati Medical College, Guwahati</li>
+                                    <li>Jorhat Medical College, Jorhat</li>
+                                    <li>Regional Medical Research Center, Dibrugarh</li>
+                                    <li>Silchar Medical College, Silchar</li>
+                                    <li>Tezpur Medical College, Tezpur</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse33">Mizoram<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse33" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse34">Manipur<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>
+                            </h4>
+                        </div>
+                        <div id="collapse34" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>J N Inst. of Med. Sciences Hospital, Imphal_East, Manipur</li>
+                                    <li>Regional Institute of Medical Sciences, Imphal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse35">Meghalaya<span><img class="arrow-img" src="img/arrow.svg" alt="arrow" /></span></a></li>                  
+                            </h4>
+                        </div>
+                        <div id="collapse35" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="center-list">
+                                    <li>NEIGRI of Health and Medical Sciences, Shillong, Meghalaya</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="various-centers">
+                    <div id="Ap-center">
+                        <ul class="center-list">
+                            <li>Andhra Medical College, Visakhapatnam, Andhra Pradesh</li>
+                            <li>GMC, Anantapur, AP</li>
+                            <li>Guntur Medical College, Guntur</li>
+                            <li>Rajeev Gandhi Institute of Medical Sciences, Kadapa</li>
+                            <li>Rangaraya Medical College, Kakinada</li>
+                            <li>Siddhartha Medical College, Vijayawada</li>
+                            <li>Sri Venkateswara Institute of Medical Sciences, Tirupati</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <div id="back-home">
+                <button id="goback" style="display: none;">Covid-19 Home</button>
+            </div>
+            <!-- <div class="mini-tab" style="display: none;">
+                <div id="corona-dash">
+                    <figure>
+                        <img src="img/iconCorona.png" alt="Corono Dashboard" />
+                    </figure>
+                    <p>Coronavirus<br /> dashboard</p>
+                </div>
+                <div id="symptom-check">
+                    <figure>
+                        <img src="img/Iconsymptom.png" alt="symptom checker" />
+                    </figure>
+                    <p>Symptom<br /> checker</p>
+                </div>
+                <div id="testing-cen">
+                    <figure>
+                        <img src="img/Icontestingcentre.png" alt="testing centers" />
+                    </figure>
+                    <p>Testing<br /> centers</p>
+                </div>
+                <div id="helpline-num">
+                    <figure>
+                        <img src="img/iconhelpline.png" alt="helpline numbers" />
+                    </figure>
+                    <p>Helpline<br /> numbers</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://surveyjs.azureedge.net/1.5.17/survey.jquery.js"></script>
+<script src="js/scripts.js"></script>
+</html>
